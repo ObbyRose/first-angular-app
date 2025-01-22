@@ -9,6 +9,10 @@ export class UserComponent {
   @Input() avatar!: string;
   @Input() name!: string;
 
+  imagePath() {
+    return `assets/users/${this.avatar}`;
+  }
+
   onSelectUser() {
   }
 }
